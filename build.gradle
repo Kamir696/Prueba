@@ -1,12 +1,12 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {
 id 'com.android.application' version '8.1.2' apply false
-
-
-implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-implementation 'com.google.com.gson:gson:2.9.1'
-implementation 'com.squareup.retrofit2:convert-gson:2.9.0'
-
-//libreria imagenes
-
-implementation 'com.squareup.picasso:picasso-gson:2.8'
+    apply plugin: 'com.android.application'
+    apply plugin: 'kotlin-android'
+}
+    dependencies {
+        implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+        implementation 'com.google.code.gson:gson:2.9.1'
+        implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+        implementation 'com.squareup.picasso:picasso:2.8'
+    }
